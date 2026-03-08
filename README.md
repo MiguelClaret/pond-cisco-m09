@@ -1,23 +1,16 @@
 # Ponderada Cisco Packet Tracer - Módulo 09
-## Video de explicação da ponderada
+## [Vídeo 1 - Explicação da ponderada](https://drive.google.com/file/d/1_IbEt4LROsIuevDXl__TTb4_-eJKhqZy/view?usp=sharing)
 
-<div align="center">
-<p><strong>Vídeo 1 - Explicação da ponderada</strong></p>
-<div style="margin: 25">
-    <div style="textAlign: 'center'">
-        <iframe width="700" height="340" src="https://drive.google.com/file/d/1_IbEt4LROsIuevDXl__TTb4_-eJKhqZy/preview" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
-        <br />
-    </div>
-</div>
-<p><em>Fonte: O autor (2026)</em></p>
-</div>
+
+
+
 
 # Relatório Técnico — Análise de Rede com Hub e Switch no Cisco Packet Tracer
 ## 1. Introdução
-Esta atividade teve como foco comparar o comportamento da transmissão de dados em duas topologias físicas equivalentes, variando apenas o dispositivo de interconexão (hub e switch). A análise foi da camada física e dos efeitos no meio de transmissão, incluindo propagação do sinal, compartilhamento do meio e encaminhamento de PDUs.
+&emsp; Esta atividade teve como foco comparar o comportamento da transmissão de dados em duas topologias físicas equivalentes, variando apenas o dispositivo de interconexão (hub e switch). A análise foi da camada física e dos efeitos no meio de transmissão, incluindo propagação do sinal, compartilhamento do meio e encaminhamento de PDUs.
 
 ## 2. Objetivo
-Validar, em ambiente simulado no Cisco Packet Tracer, as diferenças práticas entre uma rede baseada em hub e uma rede baseada em switch, analisando:
+&emsp; Validar, em ambiente simulado no Cisco Packet Tracer, as diferenças práticas entre uma rede baseada em hub e uma rede baseada em switch, analisando:
 
 - o comportamento do sinal elétrico no meio físico;
 - o impacto do meio compartilhado;
@@ -48,7 +41,7 @@ Endereçamento IP configurado:
 ## 4. Parte 1 — Rede com Hub
 
 ### 4.1 Montagem do cenário
-Foi montado um cenário com os três PCs conectados a um hub por cabos de par trançado.
+&emsp; Foi montado um cenário com os três PCs conectados a um hub por cabos de par trançado.
 
 <div align="center">
 <p><strong>Figura 1 - Montagem da rede com hub</strong></p>
@@ -58,14 +51,14 @@ Foi montado um cenário com os três PCs conectados a um hub por cabos de par tr
 </div>
 
 ### 4.2 Configuração dos endereços IP
-Os três hosts foram configurados na mesma rede lógica, conforme tabela da Seção 3:
+&emsp; Os três hosts foram configurados na mesma rede lógica, conforme tabela da Seção 3:
 
 - PC0: `10.0.0.5`
 - PC1: `10.0.0.6`
 - PC2: `10.0.0.7`
 
 ### 4.3 Testes de conectividade
-Foram executados testes de `ping` entre os hosts.
+&emsp; Foram executados testes de `ping` entre os hosts.
 
 [Vídeo 2 - Ping no cenário com hub (05-06)](./assets/videos/hub%20ping%2005-06.mp4)
 
@@ -80,14 +73,14 @@ Foram executados testes de `ping` entre os hosts.
 
 
 ### 4.4 Simulação com Simple PDU
-Foi enviada uma Simple PDU do PC0 para o PC2 em modo de simulação para observar a propagação do tráfego.
+&emsp; Foi enviada uma Simple PDU do PC0 para o PC2 em modo de simulação para observar a propagação do tráfego.
 
 [Vídeo 5 - Simple PDU no cenário com hub (PC0 para PC2)](./assets/videos/hub-pdu.mp4)
 
 
 
 ### 4.5 Análise do comportamento observado
-O hub opera na camada física (camada 1) e atua como repetidor multiporta. Ao receber um sinal em uma porta, ele replica esse mesmo sinal para as demais portas ativas. Por isso, todos os nós conectados ao hub recebem inicialmente o quadro, mesmo quando o destino final é apenas um host.
+&emsp; O hub opera na camada física (camada 1) e atua como repetidor multiporta. Ao receber um sinal em uma porta, ele replica esse mesmo sinal para as demais portas ativas. Por isso, todos os nós conectados ao hub recebem inicialmente o quadro, mesmo quando o destino final é apenas um host.
 
 ### 4.6 Respostas da Parte 1
 
@@ -100,7 +93,7 @@ O hub opera na camada física (camada 1) e atua como repetidor multiporta. Ao re
 ## 5. Parte 2 — Rede com Switch
 
 ### 5.1 Montagem do cenário
-O hub foi substituído por um switch Cisco 2960, mantendo os mesmos três PCs, o mesmo endereçamento IP e a mesma topologia física. Após a conexão, aguardou-se a estabilização das portas.
+&emsp; O hub foi substituído por um switch Cisco 2960, mantendo os mesmos três PCs, o mesmo endereçamento IP e a mesma topologia física. Após a conexão, aguardou-se a estabilização das portas.
 
 <div align="center">
 <p><strong>Figura 2 - Montagem da rede com switch 2960</strong></p>
@@ -110,7 +103,7 @@ O hub foi substituído por um switch Cisco 2960, mantendo os mesmos três PCs, o
 </div>
 
 ### 5.2 Testes de conectividade
-A conectividade foi validada novamente com `ping` entre os hosts.
+&emsp; A conectividade foi validada novamente com `ping` entre os hosts.
 
 [Vídeo 6 - Ping no cenário com switch (05-06)](./assets/videos/switch%20ping%2005-06.mp4)
 
@@ -125,14 +118,14 @@ A conectividade foi validada novamente com `ping` entre os hosts.
 
 
 ### 5.3 Simulação com Simple PDU
-Foi enviada novamente uma Simple PDU do PC0 para o PC2 em modo de simulação.
+&emsp; Foi enviada novamente uma Simple PDU do PC0 para o PC2 em modo de simulação.
 
 
 [Vídeo 9 - Simple PDU no cenário com switch (PC0 para PC2)](./assets/videos/switch-pdu.mp4)
 
 
 ### 5.4 Análise do comportamento observado
-O switch opera na camada de enlace (camada 2) para comutação de quadros e usa tabela MAC para encaminhamento. Com o aprendizado dos endereços MAC por porta, o tráfego passa a ser enviado de forma seletiva para a porta de destino, reduzindo propagação desnecessária. Em estágios iniciais de aprendizado, pode ocorrer flooding de quadros desconhecidos, mas o comportamento esperado após aprendizado é o encaminhamento direcionado.
+&emsp; O switch opera na camada de enlace (camada 2) para comutação de quadros e usa tabela MAC para encaminhamento. Com o aprendizado dos endereços MAC por porta, o tráfego passa a ser enviado de forma seletiva para a porta de destino, reduzindo propagação desnecessária. Em estágios iniciais de aprendizado, pode ocorrer flooding de quadros desconhecidos, mas o comportamento esperado após aprendizado é o encaminhamento direcionado.
 
 ### 5.5 Respostas da Parte 2
 
@@ -164,4 +157,4 @@ O switch opera na camada de enlace (camada 2) para comutação de quadros e usa 
 </div>
 
 ## 7. Conclusão
-A ponderada mostrou que, embora ambos os cenários mantenham conectividade IP entre os hosts, o comportamento do tráfego no meio físico é distinto. O hub replica sinais e mantém um meio compartilhado coletivo, com maior suscetibilidade a colisões. Já o switch aprende endereços MAC e direciona quadros de forma mais eficiente, reduzindo propagação desnecessária e segmentando os domínios de colisão.
+&emsp; A ponderada mostrou que, embora ambos os cenários mantenham conectividade IP entre os hosts, o comportamento do tráfego no meio físico é distinto. O hub replica sinais e mantém um meio compartilhado coletivo, com maior suscetibilidade a colisões. Já o switch aprende endereços MAC e direciona quadros de forma mais eficiente, reduzindo propagação desnecessária e segmentando os domínios de colisão.
