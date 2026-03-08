@@ -1,14 +1,16 @@
 # Ponderada Cisco Packet Tracer - Módulo 09
 ## Video de explicação da ponderada
+
 <div align="center">
 <p><strong>Vídeo 1 - Explicação da ponderada</strong></p>
-        <video controls width="800">
-            <source src="./assets/videos/hub ping 05-06.mp4" type="video/mp4" />
-        </video>
+<div style="margin: 25">
+    <div style="textAlign: 'center'">
+        <iframe width="700" height="340" src="https://drive.google.com/file/d/1_IbEt4LROsIuevDXl__TTb4_-eJKhqZy/preview" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
         <br />
+    </div>
+</div>
 <p><em>Fonte: O autor (2026)</em></p>
 </div>
-
 
 # Relatório Técnico — Análise de Rede com Hub e Switch no Cisco Packet Tracer
 ## 1. Introdução
@@ -65,50 +67,22 @@ Os três hosts foram configurados na mesma rede lógica, conforme tabela da Seç
 ### 4.3 Testes de conectividade
 Foram executados testes de `ping` entre os hosts.
 
-<div align="center">
-<p><strong>Vídeo 2 - Ping no cenário com hub (05-06)</strong></p>
-        <video controls width="800">
-            <source src="./assets/videos/hub ping 05-06.mp4" type="video/mp4" />
-        </video>
-        <br />
-<p><em>Fonte: O autor (2026)</em></p>
-</div>
+[Vídeo 2 - Ping no cenário com hub (05-06)](./assets/videos/hub%20ping%2005-06.mp4)
 
 
 
-<div align="center">
-<p><strong>Vídeo 3 - Ping no cenário com hub (06-07)</strong></p>
-        <video controls width="800">
-            <source src="./assets/videos/hub ping 06-07.mp4" type="video/mp4" />
-        </video>
-        <br />
-<p><em>Fonte: O autor (2026)</em></p>
-</div>
+[Vídeo 3 - Ping no cenário com hub (06-07)](./assets/videos/hub%20ping%2006-07.mp4)
 
 
 
-<div align="center">
-<p><strong>Vídeo 4 - Ping no cenário com hub (07-05)</strong></p>
-        <video controls width="800">
-            <source src="./assets/videos/hub ping 07-05.mp4" type="video/mp4" />
-        </video>
-        <br />
-<p><em>Fonte: O autor (2026)</em></p>
-</div>
+[Vídeo 4 - Ping no cenário com hub (07-05)](./assets/videos/hub%20ping%2007-05.mp4)
 
 
 
 ### 4.4 Simulação com Simple PDU
 Foi enviada uma Simple PDU do PC0 para o PC2 em modo de simulação para observar a propagação do tráfego.
 
-<div align="center">
-<p><strong>Vídeo 5 - Simple PDU no cenário com hub (PC0 para PC2)</strong></p>
-        <video controls width="800">
-            <source src="./assets/videos/hub-pdu.mp4" type="video/mp4" />
-        </video>
-        <br />
-<p><em>Fonte: O autor (2026)</em></p>
-</div>
+[Vídeo 5 - Simple PDU no cenário com hub (PC0 para PC2)](./assets/videos/hub-pdu.mp4)
 
 
 
@@ -138,36 +112,15 @@ O hub foi substituído por um switch Cisco 2960, mantendo os mesmos três PCs, o
 ### 5.2 Testes de conectividade
 A conectividade foi validada novamente com `ping` entre os hosts.
 
-<div align="center">
-<p><strong>Vídeo 6 - Ping no cenário com switch (05-06)</strong></p>
-        <video controls width="800">
-            <source src="./assets/videos/switch ping 05-06.mp4" type="video/mp4" />
-        </video>
-        <br />
-<p><em>Fonte: O autor (2026)</em></p>
-</div>
+[Vídeo 6 - Ping no cenário com switch (05-06)](./assets/videos/switch%20ping%2005-06.mp4)
 
 
 
-<div align="center">
-<p><strong>Vídeo 7 - Ping no cenário com switch (06-07)</strong></p>
-        <video controls width="800">
-            <source src="./assets/videos/switch ping 06-07.mp4" type="video/mp4" />
-        </video>
-        <br />
-<p><em>Fonte: O autor (2026)</em></p>
-</div>
+[Vídeo 7 - Ping no cenário com switch (06-07)](./assets/videos/switch%20ping%2006-07.mp4)
 
 
 
-<div align="center">
-<p><strong>Vídeo 8 - Ping no cenário com switch (07-05)</strong></p>
-        <video controls width="800">
-            <source src="./assets/videos/switch ping 07-05.mp4" type="video/mp4" />
-        </video>
-        <br />
-<p><em>Fonte: O autor (2026)</em></p>
-</div>
+[Vídeo 8 - Ping no cenário com switch (07-05)](./assets/videos/switch%20ping%2007-05.mp4)
 
 
 
@@ -175,14 +128,7 @@ A conectividade foi validada novamente com `ping` entre os hosts.
 Foi enviada novamente uma Simple PDU do PC0 para o PC2 em modo de simulação.
 
 
-<div align="center">
-<p><strong>Vídeo 9 - Simple PDU no cenário com switch (PC0 para PC2)</strong></p>
-        <video controls width="800">
-            <source src="./assets/videos/switch-pdu.mp4" type="video/mp4" />
-        </video>
-        <br />
-<p><em>Fonte: O autor (2026)</em></p>
-</div>
+[Vídeo 9 - Simple PDU no cenário com switch (PC0 para PC2)](./assets/videos/switch-pdu.mp4)
 
 
 ### 5.4 Análise do comportamento observado
